@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Atlético Zelaya | Asociarse</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <img src="img/logo.png" alt="Escudo oficial del Club Atlético Zelaya" class="logo-club">
+    <div>
+      <h1>Club Atlético Zelaya</h1>
+      <p class="subtitulo-club">Fundado en 1993 · Deporte, familia y comunidad</p>
+    </div>
+  </header>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="actividades.html">Actividades</a></li>
+      <li><a href="instalaciones.html">Instalaciones</a></li>
+      <li><a href="asociarse.html" class="activo">Asociarse</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="bloque-contenido">
+      <h2>Solicitud de Asociación</h2>
+      <p>Completá tus datos para iniciar tu inscripción. Podés revisar los aranceles vigentes en nuestro <a href="Docs/Cuadro-de-Cuotas-2026-Club-Atlético-Zelaya.pdf" target="_blank" rel="noopener">Cuadro de Cuotas (PDF)</a>.</p>
+
+      <form action="#" method="post" class="formulario-socio">
+        <div class="campo-formulario">
+          <label for="nombre">Nombre y apellido completos *</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej.: Camila Gómez" required maxlength="60">
+        </div>
+
+        <div class="fila-campos">
+          <div class="campo-formulario">
+            <label for="edad">Edad *</label>
+            <input type="number" id="edad" name="edad" min="4" max="99" placeholder="Ej.: 24" required>
+          </div>
+
+          <div class="campo-formulario">
+            <label for="nacimiento">Fecha de nacimiento *</label>
+            <input type="date" id="nacimiento" name="nacimiento" required>
+          </div>
+        </div>
+
+        <div class="fila-campos">
+          <div class="campo-formulario">
+            <label for="correo">Correo electrónico *</label>
+            <input type="email" id="correo" name="correo" placeholder="nombre@ejemplo.com" required maxlength="80">
+          </div>
+
+          <div class="campo-formulario">
+            <label for="telefono">Teléfono de contacto *</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej.: 11 5555 4444" required maxlength="20">
+          </div>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="disciplina">Actividad principal de interés *</label>
+          <select id="disciplina" name="disciplina" required>
+            <option value="">Elegí una opción</option>
+            <option value="futbol">Fútbol Infantil / Juvenil / Primera</option>
+            <option value="hockey">Hockey sobre Césped</option>
+            <option value="natacion">Natación Climatizada</option>
+            <option value="taekwondo">Taekwondo / Gimnasia</option>
+            <option value="social">Solo Socio Social (uso de instalaciones y buffet)</option>
+          </select>
+        </div>
+
+        <div class="campo-formulario">
+          <p class="titulo-grupo">Categoría de cuota:</p>
+          <div class="opciones-linea">
+            <input type="radio" id="cat-individual" name="categoria" value="individual" required>
+            <label for="cat-individual">Socio Individual</label>
+
+            <input type="radio" id="cat-familiar" name="categoria" value="familiar">
+            <label for="cat-familiar">Grupo Familiar</label>
+          </div>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="comentarios">Observaciones o consultas médicas</label>
+          <textarea id="comentarios" name="comentarios" rows="4" maxlength="400" placeholder="Contanos si tenés experiencia previa o alguna consulta para secretaría..."></textarea>
+        </div>
+
+        <div class="campo-checkbox">
+          <input type="checkbox" id="acepto" name="acepto" required>
+          <label for="acepto">Declaro haber leído el reglamento interno y acepto presentar el apto físico médico *</label>
+        </div>
+
+        <button type="submit" class="boton-principal">Enviar solicitud de socio</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie-pagina">
+    <p>Pao Antonetti· Noviembre 2026</p>
+    <p><a href="mailto:socios@clubzelaya.org.ar?subject=Duda%20sobre%20inscripción&body=Hola,%20tengo%20una%20consulta%20sobre%20el%20formulario%20de%20socio...">¿Necesitás ayuda? Escribinos por mail</a></p>
+  </footer>
+
+</body>
+</html>
+
